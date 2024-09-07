@@ -1,11 +1,11 @@
 "appId": "123456789"
 "secret": "maple123456"
 "database":
-  user: ""
-  password: ""
-  host: ""
-  port: ""
-  name: ""
+  user: "aichat"
+  password: "aichat@123"
+  host: "175.178.182.139"
+  port: "3306"
+  name: "aichat"
   MaxIdleConns: 10
   MaxOpenConns: 10
 
