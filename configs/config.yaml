@@ -1,0 +1,11 @@
+"appId": "123456789"
+"secret": "maple123456"
+"database":
+  user: ""
+  password: ""
+  host: ""
+  port: ""
+  name: ""
+  MaxIdleConns: 10
+  MaxOpenConns: 10
+
