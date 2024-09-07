@@ -3,7 +3,7 @@ package configs
 import (
 	"aichat/common/util"
 	"aichat/configs/initstruct"
-	"gorm.io/driver/postgres"
+	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"log"
@@ -32,7 +32,7 @@ func dbInit(Cfg initstruct.DataBaseConfig) {
 		},
 	)
 
-	db, err := gorm.Open(postgres.Open(connString), &gorm.Config{
+	db, err := gorm.Open(mysql.Open(connString), &gorm.Config{
 		Logger: newLogger,
 	})
 
