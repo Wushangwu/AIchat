@@ -1,4 +1,4 @@
-module gobaseline
+module aichat
 
 go 1.20
 

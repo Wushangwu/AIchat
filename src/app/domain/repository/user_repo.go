@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"gobaseline/app/domain/entity"
+	"aichat/app/domain/entity"
 )
 
 type IReposUser interface {

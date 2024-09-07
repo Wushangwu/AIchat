@@ -1,8 +1,8 @@
 package presentation
 
 import (
+	"aichat/middleware"
 	"github.com/gin-gonic/gin"
-	"gobaseline/middleware"
 )
 
 // NewRouter 路由配置

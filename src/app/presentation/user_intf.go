@@ -1,10 +1,10 @@
 package presentation
 
 import (
+	"aichat/app/domain/entity"
+	"aichat/app/domain/service"
+	"aichat/app/infrastructure/dbs"
 	"github.com/gin-gonic/gin"
-	"gobaseline/app/domain/entity"
-	"gobaseline/app/domain/service"
-	"gobaseline/app/infrastructure/dbs"
 	"net/http"
 )
 

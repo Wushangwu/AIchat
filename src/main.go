@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gobaseline/app/presentation"
-	"gobaseline/configs"
+	"aichat/app/presentation"
+	"aichat/configs"
 	"gorm.io/gorm"
 	"os"
 

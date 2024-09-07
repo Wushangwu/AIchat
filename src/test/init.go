@@ -1,9 +1,9 @@
 package test
 
 import (
-	"gobaseline/app/presentation"
-	"gobaseline/common/util"
-	"gobaseline/configs"
+	"aichat/app/presentation"
+	"aichat/common/util"
+	"aichat/configs"
 	"os"
 
 	"github.com/gin-gonic/gin"

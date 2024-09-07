@@ -1,7 +1,7 @@
 package test
 
 import (
-	"gobaseline/common/util"
+	"aichat/common/util"
 	"net/http"
 	"testing"
 

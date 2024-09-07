@@ -1,8 +1,8 @@
 package configs
 
 import (
-	"gobaseline/common/util"
-	"gobaseline/configs/initstruct"
+	"aichat/common/util"
+	"aichat/configs/initstruct"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

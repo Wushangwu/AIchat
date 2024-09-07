@@ -1,8 +1,8 @@
 package configs
 
 import (
+	"aichat/configs/initstruct"
 	"github.com/spf13/viper"
-	"gobaseline/configs/initstruct"
 )
 
 var Cfg Config

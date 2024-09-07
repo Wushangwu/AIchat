@@ -6,10 +6,10 @@ import (
 	"os"
 	"time"
 
+	"aichat/configs/initstruct"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"gobaseline/configs/initstruct"
 )
 
 // Logger 全局变量，导出给调用者使用

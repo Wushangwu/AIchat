@@ -1,8 +1,8 @@
 package service
 
 import (
-	"gobaseline/app/domain/entity"
-	"gobaseline/app/domain/repository"
+	"aichat/app/domain/entity"
+	"aichat/app/domain/repository"
 )
 
 type IUserDomain interface {

@@ -1,9 +1,9 @@
 package dbs
 
 import (
-	"gobaseline/app/domain/entity"
-	"gobaseline/app/domain/repository"
-	"gobaseline/configs"
+	"aichat/app/domain/entity"
+	"aichat/app/domain/repository"
+	"aichat/configs"
 )
 
 type UserRepoImpl struct {

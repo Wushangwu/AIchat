@@ -1,8 +1,8 @@
 package application
 
 import (
-	"gobaseline/app/domain/entity"
-	"gobaseline/app/domain/service"
+	"aichat/app/domain/entity"
+	"aichat/app/domain/service"
 )
 
 type Userapp struct {
