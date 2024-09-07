@@ -3,6 +3,7 @@ package configs
 import (
 	"aichat/common/util"
 	"aichat/configs/initstruct"
+	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -15,12 +16,9 @@ var DB *gorm.DB
 
 func dbInit(Cfg initstruct.DataBaseConfig) {
 
-	connString := "host=" + Cfg.Host +
-		" port=" + Cfg.Port +
-		" user=" + Cfg.User +
-		" dbname=" + Cfg.Name +
-		" sslmode=disable" +
-		" password=" + Cfg.Password
+	connString := Cfg.User + ":" + Cfg.Password + "@tcp(" + Cfg.Host + ":" + Cfg.Port + ")/" + Cfg.Name + "?charset=utf8mb4&parseTime=True&loc=Local"
+
+	fmt.Printf(connString)
 
 	newLogger := logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags), // io writer
