@@ -1,9 +1,9 @@
 package presentation
 
 import (
-	"aichat/app/domain/entity"
-	"aichat/app/domain/service"
-	"aichat/app/infrastructure/dbs"
+	"aichat/src/app/domain/entity"
+	"aichat/src/app/domain/service"
+	"aichat/src/app/infrastructure/dbs"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"aichat/app/domain/entity"
-	"aichat/app/domain/repository"
+	"aichat/src/app/domain/entity"
+	"aichat/src/app/domain/repository"
 )
 
 type IUserDomain interface {

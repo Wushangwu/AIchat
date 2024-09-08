@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"aichat/configs/initstruct"
+	"aichat/src/configs/initstruct"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"aichat/app/domain/entity"
+	"aichat/src/app/domain/entity"
 )
 
 type IReposUser interface {

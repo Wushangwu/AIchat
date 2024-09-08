@@ -1,9 +1,9 @@
 package test
 
 import (
-	"aichat/app/presentation"
-	"aichat/common/util"
-	"aichat/configs"
+	"aichat/src/app/presentation"
+	"aichat/src/common/util"
+	"aichat/src/configs"
 	"os"
 
 	"github.com/gin-gonic/gin"

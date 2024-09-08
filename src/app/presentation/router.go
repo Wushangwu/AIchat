@@ -1,7 +1,7 @@
 package presentation
 
 import (
-	"aichat/middleware"
+	"aichat/src/middleware"
 	"github.com/gin-gonic/gin"
 )
 

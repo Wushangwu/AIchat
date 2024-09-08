@@ -1,8 +1,8 @@
 package configs
 
 import (
-	"aichat/common/util"
-	"aichat/configs/initstruct"
+	"aichat/src/common/util"
+	"aichat/src/configs/initstruct"
 	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

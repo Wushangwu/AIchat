@@ -1,8 +1,8 @@
 package application
 
 import (
-	"aichat/app/domain/entity"
-	"aichat/app/domain/service"
+	"aichat/src/app/domain/entity"
+	"aichat/src/app/domain/service"
 )
 
 type Userapp struct {

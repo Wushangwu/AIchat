@@ -1,8 +1,8 @@
 package main
 
 import (
-	"aichat/app/presentation"
-	"aichat/configs"
+	"aichat/src/app/presentation"
+	"aichat/src/configs"
 	"gorm.io/gorm"
 	"os"
 

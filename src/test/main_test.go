@@ -1,7 +1,7 @@
 package test
 
 import (
-	"aichat/common/util"
+	"aichat/src/common/util"
 	"net/http"
 	"testing"
 

@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"aichat/common/util"
+	"aichat/src/common/util"
 	"context"
 	"os"
 	"strconv"

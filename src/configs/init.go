@@ -1,7 +1,7 @@
 package configs
 
 import (
-	"aichat/configs/initstruct"
+	"aichat/src/configs/initstruct"
 	"github.com/spf13/viper"
 )
 
