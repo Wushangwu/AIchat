@@ -3,9 +3,10 @@ package configs
 import (
 	"aichat/common/util"
 	"aichat/configs/initstruct"
-	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
+	//"gorm.io/driver/postgres"
+	"gorm.io/driver/mysql"
 	"log"
 	"os"
 	"time"
@@ -15,12 +16,17 @@ var DB *gorm.DB
 
 func dbInit(Cfg initstruct.DataBaseConfig) {
 
-	connString := "host=" + Cfg.Host +
-		" port=" + Cfg.Port +
-		" user=" + Cfg.User +
-		" dbname=" + Cfg.Name +
-		" sslmode=disable" +
-		" password=" + Cfg.Password
+	//connString := "host=" + Cfg.Host +
+	//	" port=" + Cfg.Port +
+	//	" user=" + Cfg.User +
+	//	" dbname=" + Cfg.Name +
+	//	" sslmode=disable" +
+	//	" password=" + Cfg.Password
+	connString := Cfg.User + ":" +
+		Cfg.Password + "@tcp(" +
+		Cfg.Host + ":" +
+		Cfg.Port + ")/" +
+		Cfg.Name + "?charset=utf8&parseTime=True&loc=Local"
 
 	newLogger := logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags), // io writer
@@ -32,7 +38,7 @@ func dbInit(Cfg initstruct.DataBaseConfig) {
 		},
 	)
 
-	db, err := gorm.Open(postgres.Open(connString), &gorm.Config{
+	db, err := gorm.Open(mysql.Open(connString), &gorm.Config{
 		Logger: newLogger,
 	})
 
